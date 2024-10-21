@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VestChic - Elegância e Conforto</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="imagens/bolsas.png">
+</head>
+
+<body>
+    <header>
+        <nav class="menu-desktop">
+            <ul>
+                <li><a href="#calcas">Calças</a></li>
+                <li><a href="#camisas">Camisas</a></li>
+                <li><a href="#vestidos">Vestidos</a></li>
+                <li><a href="#masculino">Masculino</a></li>
+                <li><a href="#feminino">Feminino</a></li>
+                <li><a href="cadastro.html" target="_blank">Cadastro</a></li> <!-- Link para o formulário -->
+            </ul>
+        </nav>
+        <br>
+        <div class="header-content">
+            <h1>Bem-vindo à VestChic!</h1>
+            <p>Somos gratos por escolher nossa loja. Aqui, você encontrará uma seleção exclusiva de roupas para todos os
+                estilos e ocasiões.</p>
+            <p>Caso precise de ajuda, entre em contato com nossa <a href="central.html" target="_blank">Central de
+                    Apoio</a>, disponível das 8h às 20h. Lembre-se que para comprar cadastre-se <a href="cadastro.html"
+                    target="_blank">aqui</a>.</p>
+            <p>Desenvolvedores: Cauê Almeida, Ketlyn Victoria Alves, Lais Sena.</p>
+        </div>
+
+        <!--
+        <div class="bt-abrir-menu"> pedir ajuda pro prof pq nao esta indo os icons
+            <i class="bi bi-list"></i>
+        </div>
+
+        <div class="menu-mobile">
+            <div class="bt-fechar">
+                <i class="bi bi-x-lg"></i>
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="#calcas">Calças</a></li>
+                    <li><a href="#camisas">Camisas</a></li>
+                    <li><a href="#vestidos">Vestidos</a></li>
+                    <li><a href="#masculino">Masculino</a></li>
+                    <li><a href="#feminino">Feminino</a></li>
+                    <li><a href="cadastro.html">Cadastro</a></li> Link p o formulário
+                </ul>
+            </nav>
+        </div> menu mobile
+        -->
+
+    </header>
+
+    <img src="imagens/fotodeitada.webp" alt="Foto ilustrativa 1" style="width: 100%;">
+
+    <main>
+        <div class="flex">
+            <div class="product-container">
+                <div id="calcas">
+                    <h2>Calças</h2>
+                    <div class="product">
+                        <img src="imagens/Calça1.webp" alt="Calça 1">
+                        <p>Calça Jeans - R$99,90</p>
+                    </div>
+                    <div class="product">
+                        <img src="imagens/calca2.webp" alt="Calça 2">
+                        <p>
+                        <p>Calça Social - R$129,90</p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="product-container">
+                <div id="camisas">
+                    <h2>Camisas</h2>
+                    <div class="product">
+                        <img src="imagens/camisa1.webp" alt="Camisa 1">
+                        <p>Camisa Polo - R$79,90</p>
+                    </div>
+                    <div class="product">
+                        <img src="imagens/camisa2.webp" alt="Camisa 2">
+                        <p>Camisa Social - R$99,90</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-container">
+                <div id="vestidos">
+                    <h2>Vestidos</h2>
+                    <div class="product">
+                        <img src="imagens/vest1.jpg" alt="Vestido 1">
+                        <p>Vestido Casual - R$139,90</p>
+                    </div>
+                    <div class="product">
+                        <img src="imagens/vest2.jpg" alt="Vestido 2">
+                        <p>Vestido de Festa - R$199,90</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-container">
+                <div id="masculino">
+                    <h2>Vestimentas Masculinas</h2>
+                    <div class="product">
+                        <img src="imagens/masc1.avif" alt="Camisa Masculina">
+                        <p>Camisa Estilosa - R$89,90</p>
+                    </div>
+                    <div class="product">
+                        <img src="imagens/masc2.webp" alt="Calça Masculina">
+                        <p>Calça Jeans Masculina - R$109,90</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-container">
+                <div id="feminino">
+                    <h2>Vestimentas Femininas</h2>
+                    <div class="product">
+                        <img src="imagens/fem1.webp" alt="Blusa Feminina">
+                        <p>Blusa Fashion - R$69,90</p>
+                    </div>
+                    <div class="product">
+                        <img src="imagens/fem2.webp" alt="Calça Feminina">
+                        <p>Calça Legging - R$89,90</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Seção de Feedback -->
+<section id="feedback" style="padding: 50px 0; background-color: #f9f9f9; text-align: center;">
+    <h2>Deixe seu Feedback</h2>
+    <p>Nos diga como foi sua experiência na VestChic!</p>
+    
+    <!-- Avaliação de 5 estrelas -->
+    <div class="rating">
+        <input type="radio" name="star" id="star1" value="5"><label for="star1">&#9733;</label>
+        <input type="radio" name="star" id="star2" value="4"><label for="star2">&#9733;</label>
+        <input type="radio" name="star" id="star3" value="3"><label for="star3">&#9733;</label>
+        <input type="radio" name="star" id="star4" value="2"><label for="star4">&#9733;</label>
+        <input type="radio" name="star" id="star5" value="1"><label for="star5">&#9733;</label>
+    </div>
+
+    <!-- Caixa de texto para comentários -->
+    <div style="margin-top: 20px;">
+        <textarea id="feedback-text" placeholder="Escreva seu comentário aqui..." rows="5" style="width: 80%; max-width: 600px;"></textarea>
+    </div>
+
+    <!-- Botão de envio -->
+    <div style="margin-top: 20px;">
+        <button onclick="enviarFeedback()" style="padding: 10px 20px; background-color: #000; color: #fff; border: none; cursor: pointer;">
+            Enviar Feedback
+        </button>
+    </div>
+
+    <!-- Mensagem de confirmação -->
+    <p id="confirmacao" style="display:none; color: green; font-weight: bold; margin-top: 20px;">
+        Seu feedback foi enviado!
+    </p>
+</section>
+
+    </main>
+
+    <footer>
+        <p>Localização: Rua Miguel Couto, Cubatão, São Paulo.</p>
+        <p>Desenvolvedores: Cauê Almeida, Ketlyn Victoria Alves, Lais Sena.</p>
+        <a href="https://wa.me/5513996581364" target="_blank">WhatsApp</a>
+        <a href="central.html" target="_blank">Central de Apoio</a>
+    </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

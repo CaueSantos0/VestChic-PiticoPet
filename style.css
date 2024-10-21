@@ -1,0 +1,212 @@
+/* Estilos globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #444;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 10px 0;
+}
+
+nav.menu-desktop ul li {
+    margin: 0 15px;
+}
+
+nav.menu-desktop ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.header-content p {
+    margin: 15px 0;
+}
+
+/* Seção de produtos */
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px auto;
+}
+
+.product {
+    display: inline-block;
+    flex: 1 1 250px;
+    /* Faz com que o produto ocupe o espaço de 250px, ajustando automaticamente */
+    margin: 15px;
+    padding: 15px;
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    max-width: 100%;
+}
+
+/* Efeito de destaque no hover */
+.product:hover {
+    transform: scale(1.05);
+    /* Aumenta o tamanho do produto */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Adiciona uma sombra para dar mais destaque */
+    cursor: pointer
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #444;
+    color: #fff;
+}
+
+footer a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+h2 {
+    text-align: center;
+}
+
+/* Estilo do JS */
+input,
+label {
+    margin: 0.1%;
+    display: block;
+}
+
+/* Estilo do p do Cadasro */
+#pcad {
+    text-align: center;
+}
+
+/*Estilo de avaliação */
+.rating {
+    display: inline-block;
+}
+
+.rating input {
+    display: none;
+}
+
+.rating label {
+    font-size: 30px;
+    color: #ccc;
+    cursor: pointer;
+    padding: 0 5px;
+}
+
+.rating input:checked~label {
+    color: gold;
+}
+
+.rating label:hover,
+.rating label:hover~label {
+    color: gold;
+}
+
+/*Media Query para responsividade*/
+@media screen and (max-width: 1090px) {
+
+    /* CRIAR UMA CLASSE FLEX QUE ENVOLVE TODO O SITE LOGO DEPOIS DO MAIN*/
+    .flex {
+        flex-direction: collum;
+    }
+
+    /* CRIAR UM ID PARA O NAV (menu-desktop)*/
+    .menu-desktop {
+        display: none;
+    }
+
+    /* Estilo do Menu Mobile */
+    .bt-abrir-menu i {
+        color: #fff;
+
+
+    }
+
+    .menu-mobile {
+        background-color: black;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 1111111;
+        width: 0%;
+        overflow: hidden;
+
+    }
+
+    .menu-mobile .bt-fechar {
+        padding: 20px 5%;
+    }
+
+    .menu-mobile .bt-fechar i {
+        color: #fff;
+        font-size: 30px;
+    }
+
+    .menu-mobile nav ul {
+        text-align: right;
+    }
+
+    .menu-mobile nav ul li a {
+        color: #fff;
+        font-size: 20px;
+        font-weight: 300;
+        padding: 20px 4%;
+        text-decoration: none;
+        display: block;
+    }
+
+
+    .menu-mobile nav ul {
+        flex-direction: column;
+    }
+
+    .menu-mobile nav ul li {
+        display: inline-block;
+        padding: 1%;
+    }
+
+    .menu-mobile nav ul li a:hover {
+        background-color: #fff;
+        color: rgb(51, 51, 51)
+    }
+
+
+}
